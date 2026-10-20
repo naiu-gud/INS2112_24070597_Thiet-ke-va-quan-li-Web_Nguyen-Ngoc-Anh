@@ -1,167 +1,403 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Greenfield Coding Club is a cozy summer-inspired coding community where curious people build beautiful things for the web.">
-  <title>Greenfield Coding Club | Summer Garden Layout</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Greenfield Coding Club is a friendly summer-inspired community where curious people learn web design, build projects, and grow together."
+  >
+
+  <title>Home | Greenfield Coding Club</title>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
 
+  <!-- =========================
+       HEADER
+       ========================= -->
+
   <header class="site-header">
+
     <div class="container">
-      <p class="site-tagline">A sunny little place to learn and build</p>
-      <h1 class="site-title">Greenfield Coding Club</h1>
-      <p class="site-subtitle">
-        A soft summer corner where ideas bloom, code grows, and creativity feels alive.
+
+      <p class="site-tagline">
+        Learn · Create · Grow
       </p>
+
+      <h1 class="site-title">
+        Greenfield Coding Club
+      </h1>
+
+      <p class="site-subtitle">
+        A bright little summer corner for people who want
+        to learn web design, build useful things, and grow together.
+      </p>
+
     </div>
+
   </header>
-<!-- Main navigation for Home, About, and Contact pages -->
-  <nav class="site-nav" aria-label="Main navigation">
+
+
+  <!-- =========================
+       SHARED NAVIGATION
+       ========================= -->
+
+  <nav
+    class="site-nav"
+    aria-label="Main navigation"
+  >
+
     <div class="container">
+
       <ul class="nav-list">
-  <li>
-    <a class="active" href="index.html" aria-current="page">Home</a>
-  </li>
 
-  <li>
-    <a href="about.html">About</a>
-  </li>
+        <li class="active">
+          <a
+            href="index.html"
+            aria-current="page"
+          >
+            Home
+          </a>
+        </li>
 
-  <li>
-    <a href="contact.html">Contact</a>
-  </li>
-</ul>
+        <li>
+          <a href="about.html">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
     </div>
+
   </nav>
-<!-- Main two-column content layout -->
+
+
+  <!-- =========================
+       MAIN CONTENT
+       ========================= -->
 
   <main class="site-main">
-    <div class="container page-layout">
 
-      <section class="main-content" aria-labelledby="welcome-title">
+    <div class="container">
 
-        <section class="hero-card">
-          <p class="mini-label">Summer coding garden</p>
-          <h2 id="welcome-title">Welcome to a bright and leafy web space.</h2>
-          <p>
-            Greenfield Coding Club is a friendly place for beginners and curious makers.
-            Here we learn step by step, grow ideas together, and turn small experiments
-            into websites we can proudly share.
-          </p>
-          <p>
-            This page is designed with a fresh green summer vibe, inspired by leaves,
-            sunshine, and the calm feeling of working in a garden full of ideas.
-          </p>
-          <a class="main-button" href="about.html">Explore our club</a>
-        </section>
 
-        <section class="content-card" aria-labelledby="activities-title">
-          <p class="mini-label">What we do</p>
-          <h2 id="activities-title">Little steps, lovely progress.</h2>
-          <p>
-            We believe learning web design should feel welcoming, creative, and easy to follow.
-            Every meeting gives members a chance to build something useful and beautiful.
+      <!-- WELCOME -->
+
+      <section class="home-hero">
+
+        <div class="home-hero-copy">
+
+          <p class="mini-label">
+            Welcome
           </p>
 
-          <div class="feature-grid">
-            <article class="feature-box">
-              <h3>Learn gently</h3>
-              <p>
-                We explain HTML, CSS, and layout ideas in a simple and beginner-friendly way.
-              </p>
-            </article>
+          <h2>
+            Small ideas can grow into beautiful things.
+          </h2>
 
-            <article class="feature-box">
-              <h3>Build together</h3>
-              <p>
-                Members help one another shape pages, improve designs, and fix small problems.
-              </p>
-            </article>
-
-            <article class="feature-box">
-              <h3>Grow with joy</h3>
-              <p>
-                We celebrate progress, even tiny wins, because every new skill is a seed.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-card" aria-labelledby="story-title">
-          <p class="mini-label">A seasonal theme</p>
-          <h2 id="story-title">A page that feels softer and less stiff.</h2>
           <p>
-            Instead of a plain classroom page, this layout tries to feel like a small summer garden.
-            The colors, wording, spacing, and later the CSS decorations will make the page look more
-            relaxed, lively, and charming.
+            Greenfield Coding Club is a welcoming place for beginners
+            and curious makers who want to learn how websites are built.
           </p>
+
           <p>
-            In Session 5, the most important thing is not only beauty, but also using semantic HTML
-            correctly: header, nav, main, section, aside, and footer all have clear jobs in the layout.
+            We practice step by step, share ideas, and help one another
+            turn simple experiments into pages we are proud to show.
           </p>
-        </section>
+
+          <a
+            class="main-button"
+            href="about.html"
+          >
+            Discover our club
+          </a>
+
+        </div>
+
+
+        <div class="home-hero-image">
+
+          <img
+            src="images/coding-club.svg"
+            alt="Greenfield Coding Club project illustration"
+          >
+
+        </div>
 
       </section>
 
-      <aside class="sidebar" aria-labelledby="sidebar-title">
-        <section class="sidebar-card">
-          <p class="mini-label">Quick links</p>
-          <h2 id="sidebar-title">Garden paths</h2>
-          <ul class="sidebar-list">
-            <li><a href="about.html">Meet the club</a></li>
-            <li><a href="contact.html">Join a meetup</a></li>
-            <li><a href="contact.html">Send a message</a></li>
-          </ul>
-        </section>
 
-        <section class="sidebar-card">
-          <p class="mini-label">Summer notes</p>
-          <h2>Small reminders</h2>
-          <ul class="sidebar-list">
-            <li>Bring your curiosity.</li>
-            <li>Ask simple questions.</li>
-            <li>Practice a little every week.</li>
-            <li>Make your page feel alive.</li>
-          </ul>
-        </section>
+      <!-- WHAT WE DO -->
 
-        <section class="sidebar-card highlight-card">
-          <p class="mini-label">Mood of the week</p>
-          <h2>Leafy, sunny, and calm.</h2>
-          <p>
-            A good web page does not only work — it also creates a feeling.
-            This one should feel fresh, green, soft, and welcoming.
+      <section class="content-card">
+
+        <p class="mini-label">
+  Our activities
+</p>
+
+<h2>
+  What We Do
+</h2>
+
+        <p>
+          Our club activities are designed to make web design
+          easier to understand and more enjoyable to practice.
+        </p>
+
+
+        <ul class="activity-list">
+
+          <li>
+            Build small websites using HTML and CSS.
+          </li>
+
+          <li>
+            Practice page layouts and navigation.
+          </li>
+
+          <li>
+            Review one another's projects and share useful feedback.
+          </li>
+
+          <li>
+            Experiment with colors, spacing, images, and responsive design.
+          </li>
+
+        </ul>
+
+      </section>
+
+
+      <!-- WHY JOIN US -->
+
+      <section class="content-card">
+
+        <p class="mini-label">
+  Grow with us
+</p>
+
+<h2>
+  Why Join Us?
+</h2>
+
+        <div class="feature-grid">
+
+          <article class="feature-box">
+
+            <h3>
+              Friendly learning
+            </h3>
+
+            <p>
+              Beginners can ask simple questions without feeling
+              rushed or embarrassed.
+            </p>
+
+          </article>
+
+
+          <article class="feature-box">
+
+            <h3>
+              Real practice
+            </h3>
+
+            <p>
+              Every meeting includes something practical
+              you can build, test, and improve.
+            </p>
+
+          </article>
+
+
+          <article class="feature-box">
+
+            <h3>
+              Shared progress
+            </h3>
+
+            <p>
+              You learn faster when people around you can
+              explain ideas and celebrate small wins.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- SUMMER WORKSHOP -->
+
+      <section class="summer-feature">
+
+        <div class="summer-feature-image">
+
+          <img
+            src="images/summer-workshop.svg"
+            alt="Summer coding workshop illustration with plants and a laptop"
+          >
+
+        </div>
+
+
+        <div class="summer-feature-copy">
+
+          <p class="mini-label">
+            Summer workshop
           </p>
-        </section>
-      </aside>
+
+          <h2>
+            Code, sunshine, and creative energy.
+          </h2>
+
+          <p>
+            Our summer sessions mix focused coding practice with
+            a relaxed atmosphere. Bring an idea, open your laptop,
+            and spend time making something that feels like your own.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- UPCOMING EVENTS -->
+
+      <section class="content-card">
+
+        <p class="mini-label">
+          Upcoming Events
+        </p>
+
+        <h2>
+          What's happening next?
+        </h2>
+
+
+        <div class="event-grid">
+
+          <article class="event-card">
+
+            <p class="event-date">
+              24 OCT
+            </p>
+
+            <h3>
+              HTML Garden Night
+            </h3>
+
+            <p>
+              A beginner-friendly evening for building
+              a clean semantic page from scratch.
+            </p>
+
+          </article>
+
+
+          <article class="event-card">
+
+            <p class="event-date">
+              31 OCT
+            </p>
+
+            <h3>
+              CSS Picnic Lab
+            </h3>
+
+            <p>
+              Practice colors, spacing, cards, and flexible layouts
+              while improving an existing page.
+            </p>
+
+          </article>
+
+
+          <article class="event-card">
+
+            <p class="event-date">
+              07 NOV
+            </p>
+
+            <h3>
+              Mini-site Showcase
+            </h3>
+
+            <p>
+              Bring your three-page website and share
+              what you learned with the club.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
 
     </div>
+
   </main>
 
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
   <footer class="site-footer">
-  <div class="container footer-content">
 
-    <div>
-      <p class="footer-title">
-        Greenfield Coding Club © 2026
-      </p>
+    <div class="container footer-content">
 
-      <p>
-        Made with curiosity, kindness, and a little summer sparkle.
-      </p>
+      <div>
+
+        <p class="footer-title">
+          Greenfield Coding Club © 2026
+        </p>
+
+        <p>
+          Learn gently. Build bravely. Grow together.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a
+          href="https://github.com/"
+          target="_blank"
+        >
+          GitHub
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
     </div>
 
-    <div class="footer-links">
-      <a href="https://github.com/naiu-gud" target="_blank">GitHub</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>

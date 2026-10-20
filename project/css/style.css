@@ -614,3 +614,521 @@ body {
     text-align: center;
 }
 }
+/* ==================================================
+   SESSION 06 - THREE PAGE MINI SITE
+   Home page additions
+   ================================================== */
+
+
+/* ---------- Active navigation item ---------- */
+
+.nav-list li.active a {
+    background-color: var(--forest);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Home welcome section ---------- */
+
+.home-hero {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    margin-bottom: 32px;
+    padding: 42px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.96),
+            rgba(238, 247, 240, 0.96)
+        );
+
+    border: 1px solid #dbe8de;
+    border-radius: 30px;
+
+    box-shadow:
+        0 18px 40px rgba(35, 79, 63, 0.09);
+}
+
+
+.home-hero-copy {
+    flex: 1.2;
+}
+
+
+.home-hero-copy h2 {
+    margin-bottom: 18px;
+
+    color: var(--forest);
+
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.2;
+}
+
+
+.home-hero-copy p {
+    margin-bottom: 16px;
+}
+
+
+.home-hero-image {
+    flex: 0.8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home-hero-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+
+    border-radius: 26px;
+
+    box-shadow:
+        0 14px 30px rgba(35, 79, 63, 0.12);
+}
+
+
+/* ---------- What We Do list ---------- */
+
+.activity-list {
+    margin-top: 22px;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.activity-list li {
+    position: relative;
+
+    margin-bottom: 13px;
+    padding: 15px 18px 15px 48px;
+
+    background-color: var(--mint);
+
+    border: 1px solid #d7e8db;
+    border-radius: 16px;
+}
+
+
+.activity-list li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 18px;
+    top: 14px;
+
+    width: 22px;
+    height: 22px;
+
+    color: var(--white);
+    background-color: var(--leaf);
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 22px;
+    text-align: center;
+
+    border-radius: 50%;
+}
+
+
+/* ---------- Summer workshop ---------- */
+
+.summer-feature {
+    display: flex;
+    align-items: center;
+
+    gap: 38px;
+
+    margin-bottom: 28px;
+    padding: 34px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8f4d7,
+            #edf7ef
+        );
+
+    border: 1px solid #e4dfbd;
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 35px rgba(35, 79, 63, 0.07);
+}
+
+
+.summer-feature-image,
+.summer-feature-copy {
+    flex: 1;
+}
+
+
+.summer-feature-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 22px;
+}
+
+
+.summer-feature-copy h2 {
+    margin-bottom: 14px;
+
+    color: var(--forest);
+
+    font-size: 30px;
+    line-height: 1.25;
+}
+
+
+.summer-feature-copy p {
+    margin-bottom: 0;
+}
+
+
+/* ---------- Upcoming events ---------- */
+
+.event-grid {
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+
+.event-card {
+    flex: 1;
+
+    padding: 24px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f4faf5
+        );
+
+    border: 1px solid #d7e6da;
+    border-radius: 20px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.event-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 26px rgba(35, 79, 63, 0.10);
+}
+
+
+.event-date {
+    display: inline-block;
+
+    margin-bottom: 13px;
+    padding: 6px 11px;
+
+    color: var(--forest);
+    background-color: #f5e7a8;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    border-radius: 999px;
+}
+
+
+.event-card h3 {
+    margin-bottom: 9px;
+
+    color: var(--leaf);
+
+    font-size: 20px;
+}
+
+
+.event-card p:last-child {
+    margin-bottom: 0;
+
+    color: var(--muted);
+}
+
+
+/* ---------- Session 06 responsive additions ---------- */
+
+@media (max-width: 850px) {
+
+    .home-hero,
+    .summer-feature {
+        flex-direction: column;
+    }
+
+    .home-hero-copy,
+    .home-hero-image,
+    .summer-feature-image,
+    .summer-feature-copy {
+        width: 100%;
+    }
+
+    .home-hero-image img {
+        max-width: 500px;
+    }
+
+    .event-grid {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .home-hero,
+    .summer-feature {
+        padding: 24px;
+
+        border-radius: 22px;
+    }
+
+    .home-hero {
+        gap: 28px;
+    }
+
+    .summer-feature {
+        gap: 25px;
+    }
+
+    .activity-list li {
+        padding-right: 14px;
+    }
+}
+/* ==================================================
+   SESSION 06 - CONTACT PAGE
+   ================================================== */
+
+
+/* ---------- Contact hero ---------- */
+
+.contact-hero {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    margin-bottom: 30px;
+    padding: 42px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.97),
+            rgba(238, 247, 240, 0.95)
+        );
+
+    border: 1px solid #dbe8de;
+    border-radius: 30px;
+
+    box-shadow:
+        0 18px 40px rgba(35, 79, 63, 0.09);
+}
+
+
+.contact-hero-copy {
+    flex: 1.15;
+}
+
+
+.contact-hero-copy h2 {
+    margin-bottom: 18px;
+
+    color: var(--forest);
+
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.2;
+}
+
+
+.contact-hero-copy p {
+    margin-bottom: 16px;
+}
+
+
+.contact-hero-image {
+    flex: 0.85;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-hero-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+
+    border-radius: 26px;
+
+    box-shadow:
+        0 14px 30px rgba(35, 79, 63, 0.12);
+}
+
+
+/* ---------- Contact information layout ---------- */
+
+.contact-info-grid {
+    display: flex;
+    gap: 24px;
+
+    margin-bottom: 28px;
+}
+
+
+.contact-info-card {
+    flex: 1;
+
+    padding: 30px;
+
+    background-color: rgba(255, 255, 255, 0.92);
+
+    border: 1px solid #dbe8de;
+    border-radius: 25px;
+
+    box-shadow:
+        0 12px 28px rgba(35, 79, 63, 0.07);
+}
+
+
+.contact-info-card h2 {
+    margin-bottom: 17px;
+
+    color: var(--forest);
+
+    font-size: 27px;
+}
+
+
+/* ---------- Contact channels list ---------- */
+
+.contact-list {
+    margin: 22px 0 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.contact-list li {
+    margin-bottom: 14px;
+    padding: 15px 17px;
+
+    background-color: var(--mint);
+
+    border: 1px solid #d6e7da;
+    border-radius: 15px;
+
+    color: var(--text);
+}
+
+
+.contact-list strong {
+    color: var(--forest);
+}
+
+
+/* ---------- Meeting card ---------- */
+
+.meeting-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf7,
+            #f6f2d8
+        );
+
+    border-color: #eadfae;
+}
+
+
+.meeting-card p {
+    margin-bottom: 16px;
+}
+
+
+/* ---------- Final invitation ---------- */
+
+.contact-invitation {
+    text-align: center;
+}
+
+
+.contact-invitation h2 {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contact-invitation > p:not(.mini-label) {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ---------- Contact responsive layout ---------- */
+
+@media (max-width: 850px) {
+
+    .contact-hero {
+        flex-direction: column;
+    }
+
+    .contact-hero-copy,
+    .contact-hero-image {
+        width: 100%;
+    }
+
+    .contact-hero-image img {
+        max-width: 500px;
+    }
+
+    .contact-info-grid {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+        padding: 24px;
+        gap: 28px;
+
+        border-radius: 22px;
+    }
+
+    .contact-info-card {
+        padding: 24px;
+
+        border-radius: 22px;
+    }
+}

@@ -11,7 +11,7 @@
 
   <meta
     name="description"
-    content="Contact Greenfield Coding Club and join our friendly summer-inspired coding community."
+    content="Contact Greenfield Coding Club, find our meeting details, and connect with our friendly learning community."
   >
 
   <title>Contact | Greenfield Coding Club</title>
@@ -24,6 +24,7 @@
 
   <!-- =========================
        HEADER
+       Same header used across the mini-site
        ========================= -->
 
   <header class="site-header">
@@ -31,16 +32,16 @@
     <div class="container">
 
       <p class="site-tagline">
-        Let your next idea begin here
+        Learn · Create · Grow
       </p>
 
       <h1 class="site-title">
-        Come grow with us
+        Greenfield Coding Club
       </h1>
 
       <p class="site-subtitle">
-        Ask a question, share an idea, or simply say hello.
-        New members are always welcome in our little coding garden.
+        A bright little summer corner for people who want
+        to learn web design, build useful things, and grow together.
       </p>
 
     </div>
@@ -49,7 +50,8 @@
 
 
   <!-- =========================
-       NAVIGATION
+       SHARED NAVIGATION
+       Contact is the current page
        ========================= -->
 
   <nav
@@ -73,9 +75,8 @@
           </a>
         </li>
 
-        <li>
+        <li class="active">
           <a
-            class="active"
             href="contact.html"
             aria-current="page"
           >
@@ -96,192 +97,139 @@
 
   <main class="site-main">
 
-    <div class="container page-layout">
+    <div class="container">
 
 
-      <!-- LEFT COLUMN -->
+      <!-- Contact introduction -->
 
-      <section class="main-content">
+      <section class="contact-hero">
 
-        <section class="hero-card">
+        <div class="contact-hero-copy">
 
           <p class="mini-label">
-            Say hello
+            Let's Connect
           </p>
 
           <h2>
-            We would love to hear from you.
+            Contact Us
           </h2>
 
           <p>
-            Whether you are completely new to coding or already
-            building your own projects, you are welcome to reach out.
+            Have a question, a project idea, or simply want
+            to learn more about the club?
           </p>
 
           <p>
-            Send a short message below and tell us what you would
-            like to learn, build, or explore next.
+            We would love to hear from you. Reach out through
+            any of the contact channels below or visit us
+            during one of our weekly meetups.
           </p>
 
-        </section>
+        </div>
 
 
-        <section class="content-card">
+        <div class="contact-hero-image">
 
-          <p class="mini-label">
-            Send a message
-          </p>
+          <img
+            src="images/contact-garden.svg"
+            alt="Illustration of a friendly coding club meeting in a green garden"
+          >
 
-          <h2>
-            Start a conversation
-          </h2>
-
-
-          <form class="contact-form" action="#" method="get">
-
-            <div class="form-group">
-
-              <label for="name">
-                Your name
-              </label>
-
-              <input
-                id="name"
-                name="name"
-                type="text"
-                autocomplete="name"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="email">
-                Email address
-              </label>
-
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="message">
-                What would you like to ask?
-              </label>
-
-              <textarea
-                id="message"
-                name="message"
-                required
-              ></textarea>
-
-            </div>
-
-
-            <button
-              class="form-button"
-              type="submit"
-            >
-              Send message
-            </button>
-
-          </form>
-
-        </section>
+        </div>
 
       </section>
 
 
-      <!-- RIGHT COLUMN / SIDEBAR -->
+      <!-- Contact information -->
 
-      <aside
-        class="sidebar"
-        aria-label="Contact page sidebar"
-      >
+      <section class="contact-info-grid">
 
-
-        <section class="sidebar-card">
+        <article class="contact-info-card">
 
           <p class="mini-label">
-            Before you come
+            Get in touch
           </p>
 
           <h2>
-            What to bring
+            Contact channels
           </h2>
 
-          <ol class="sidebar-list">
+          <ul class="contact-list">
 
             <li>
-              Your laptop, if you have one.
+              <strong>Email:</strong>
+              hello@greenfieldclub.example
             </li>
 
             <li>
-              A question or idea to explore.
+              <strong>Phone:</strong>
+              +84 912 345 678
             </li>
 
             <li>
-              A willingness to share what you learn.
+              <strong>Social media:</strong>
+              @greenfieldcodingclub
             </li>
 
-          </ol>
+          </ul>
 
-        </section>
+        </article>
 
 
-        <section class="sidebar-card">
+        <article class="contact-info-card meeting-card">
 
           <p class="mini-label">
-            Weekly rhythm
+            Weekly Meetup
           </p>
 
           <h2>
-            Learn a little. Build a little.
-          </h2>
-
-          <p>
-            We meet regularly to practice web design,
-            share progress, and help one another keep moving.
-          </p>
-
-        </section>
-
-
-        <section class="sidebar-card highlight-card">
-
-          <p class="mini-label">
-            New here?
-          </p>
-
-          <h2>
-            Beginners belong here too.
+            Where to find us
           </h2>
 
           <p>
-            You do not need to know everything before joining.
-            Curiosity is more than enough to get started.
+            Greenfield Coding Club meets every Saturday afternoon
+            at the Community Learning Room, 144 Xuan Thuy Street,
+            Cau Giay District, Hanoi.
           </p>
 
-          <a
-            class="main-button"
-            href="about.html"
-          >
-            Read about our club
-          </a>
+          <p>
+            Our meetup space is relaxed and beginner-friendly.
+            Bring a laptop if you have one, along with a question,
+            an idea, or something you would like to build.
+          </p>
 
-        </section>
+        </article>
 
-      </aside>
+      </section>
+
+
+      <!-- Friendly invitation -->
+
+      <section class="content-card contact-invitation">
+
+        <p class="mini-label">
+          New Members Welcome
+        </p>
+
+        <h2>
+          Your first visit can be simple.
+        </h2>
+
+        <p>
+          You do not need previous coding experience to join.
+          Come by, meet the community, and see how a small idea
+          can grow into a real web project.
+        </p>
+
+        <a
+          class="main-button"
+          href="about.html"
+        >
+          Learn more about us
+        </a>
+
+      </section>
+
 
     </div>
 
@@ -290,6 +238,7 @@
 
   <!-- =========================
        FOOTER
+       Same footer used across the mini-site
        ========================= -->
 
   <footer class="site-footer">
@@ -303,7 +252,7 @@
         </p>
 
         <p>
-          We look forward to meeting you.
+          Learn gently. Build bravely. Grow together.
         </p>
 
       </div>
@@ -312,14 +261,14 @@
       <div class="footer-links">
 
         <a
-          href="https://github.com/naiu-gud"
+          href="https://github.com/"
           target="_blank"
         >
           GitHub
         </a>
 
-        <a href="about.html">
-          About
+        <a href="contact.html">
+          Contact
         </a>
 
       </div>
@@ -327,6 +276,7 @@
     </div>
 
   </footer>
+
 
 </body>
 

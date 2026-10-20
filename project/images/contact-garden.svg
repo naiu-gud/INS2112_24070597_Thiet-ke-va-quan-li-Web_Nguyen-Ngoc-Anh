@@ -1,0 +1,181 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="520"
+  viewBox="0 0 800 520"
+>
+
+  <rect
+    width="800"
+    height="520"
+    rx="36"
+    fill="#eef7f0"
+  />
+
+  <!-- Sun -->
+
+  <circle
+    cx="675"
+    cy="95"
+    r="48"
+    fill="#f5d98b"
+  />
+
+
+  <!-- Ground -->
+
+  <path
+    d="M0 405
+       C150 350, 280 445, 420 395
+       C560 345, 675 430, 800 380
+       L800 520
+       L0 520 Z"
+    fill="#dfeee3"
+  />
+
+
+  <!-- Left plant -->
+
+  <path
+    d="M110 420
+       C120 330, 135 270, 155 220"
+    fill="none"
+    stroke="#234f3f"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+
+  <ellipse
+    cx="125"
+    cy="330"
+    rx="65"
+    ry="25"
+    transform="rotate(-30 125 330)"
+    fill="#75a985"
+  />
+
+  <ellipse
+    cx="165"
+    cy="280"
+    rx="62"
+    ry="24"
+    transform="rotate(25 165 280)"
+    fill="#4f8a68"
+  />
+
+
+  <!-- Right plant -->
+
+  <path
+    d="M685 420
+       C675 340, 650 285, 625 230"
+    fill="none"
+    stroke="#234f3f"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+
+  <ellipse
+    cx="675"
+    cy="335"
+    rx="65"
+    ry="25"
+    transform="rotate(30 675 335)"
+    fill="#75a985"
+  />
+
+  <ellipse
+    cx="625"
+    cy="290"
+    rx="62"
+    ry="24"
+    transform="rotate(-25 625 290)"
+    fill="#4f8a68"
+  />
+
+
+  <!-- Laptop -->
+
+  <rect
+    x="230"
+    y="145"
+    width="340"
+    height="220"
+    rx="24"
+    fill="#ffffff"
+    stroke="#234f3f"
+    stroke-width="6"
+  />
+
+  <rect
+    x="270"
+    y="185"
+    width="260"
+    height="135"
+    rx="15"
+    fill="#dfeee3"
+  />
+
+  <rect
+    x="185"
+    y="365"
+    width="430"
+    height="25"
+    rx="12"
+    fill="#234f3f"
+  />
+
+
+  <!-- Message symbol -->
+
+  <rect
+    x="335"
+    y="215"
+    width="130"
+    height="70"
+    rx="18"
+    fill="#75a985"
+  />
+
+  <path
+    d="M365 285 L385 307 L400 285"
+    fill="#75a985"
+  />
+
+  <circle
+    cx="370"
+    cy="250"
+    r="7"
+    fill="#ffffff"
+  />
+
+  <circle
+    cx="400"
+    cy="250"
+    r="7"
+    fill="#ffffff"
+  />
+
+  <circle
+    cx="430"
+    cy="250"
+    r="7"
+    fill="#ffffff"
+  />
+
+
+  <!-- Caption -->
+
+  <text
+    x="400"
+    y="455"
+    text-anchor="middle"
+    font-family="Arial"
+    font-size="24"
+    font-weight="bold"
+    fill="#234f3f"
+  >
+    Say hello and grow with us
+  </text>
+
+</svg>
